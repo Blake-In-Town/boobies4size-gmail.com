@@ -1,0 +1,49 @@
+	/*Slider / Слайдер*/
+
+	.slider, .ant-carousel {
+
+	}
+
+		.slider__wrapper, .ant-carousel-hider{
+			display: flex;
+		}
+
+		.slider__list .ant-carousel-list{
+
+		}
+
+		.slider__item .ant-carouser-element{
+			margin: 15px;
+			display: block;
+		}
+
+
+
+		.slider__description {
+			
+		}
+
+		.slider__button {
+			height: 60px;
+			width: 60px;
+			border: none;
+			background-image: url('../img/arrow.png');
+			border-radius: 30px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+			cursor: pointer;
+			position: relative;
+			bottom: 250px;
+		}
+
+		.slider__button:focus {
+			outline: 0 none;
+		}
+
+			.slider__button_left {
+				float: left;
+				
+			}
+			.slider__button_right {
+				float: right;
+				transform: rotate(180deg);
+			}
