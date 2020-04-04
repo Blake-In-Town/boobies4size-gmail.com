@@ -18,4 +18,22 @@ $(function(){
                 $('body').css('-ms-overflow-y','visible');
             }
         });
+
+
+        // mobile menu buttons
+    
+        
+	$('.header__mobile-menu').click(function(){
+        $('.mobile__slider-menu').fadeIn();
+        $('.main').animate({
+            marginTop: "15%"
+        });
+    });
+
+    $('.close-slider').click(function(){
+        $('.mobile__slider-menu').fadeOut();
+        $('.main').animate({
+            marginTop: "0%"
+        });    
+    });
 })

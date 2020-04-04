@@ -20,6 +20,12 @@ html {
 	background-color: #f3f3f3;
 }
 
+/* mobile menu slider start  */
+.mobile__slider-menu {
+	display: none
+}
+/* mobile menu slider end  */
+
 /* popup window start */
 .popup-background {
 	width: 100%;
@@ -40,7 +46,7 @@ html {
 	}
 
 		.popup-window * {
-			font-size: 130%;
+			font-size: 110%;
 			margin-top: 5px;
 			margin-bottom: 5px;
 		}
@@ -143,6 +149,7 @@ button:focus {
 		}
 			.menu-nav__link_underline {
 				color: #f53f4f;
+
     			text-decoration: underline;
 			}
 

@@ -23,56 +23,10 @@
 
 html, body {
 	width: auto;
-/*	overflow-x: hidden;
-*/}
-
-/* popup window start */
-.popup-background {
-
 }
-	.popup-window {
-		width: 90%;
 
-	}
 
-		.popup-window * {
-			font-size: 100%;
-			margin-top: 5px;
-			margin-bottom: 5px;
-		}
 
-		.form {
-			padding: 20px 0px;
-			display: flex;
-			flex-wrap: wrap;
-			height: 100%;
-			justify-content: center;
-		}
-
-			.form__label {
-				width: 75%;	
-			}
-
-			.form__value {
-				width: 75%;
-			}
-
-			.info {
-				height: 3em;
-				resize: none;
-			}
-
-			.form__button {
-				border: none;
-				background-color: #ff4e2e;
-				color: white;
-				font-size: 17px;
-				width: 75%;
-				height: 60px;
-				cursor: pointer;
-				margin-top: 15px;
-			}
-/* popup window end */
 
 .header__child {
 		display: none;
@@ -286,6 +240,119 @@ html, body {
 				}
 /*footer end*/
 
+/* последние селекторы приоритетнее */
 
+/* popup window start */
+
+.popup-window {
+	width: 90%;
+
+}
+
+	.popup-window * {
+		font-size: 100%;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.form {
+		padding: 20px 0px;
+		display: flex;
+		flex-wrap: wrap;
+		height: 100%;
+		justify-content: center;
+	}
+
+		.form__label {
+			width: 75%;	
+		}
+
+		.form__value {
+			width: 75%;
+		}
+
+		.info {
+			height: 3em;
+			resize: none;
+		}
+
+		.form__button {
+			border: none;
+			background-color: #ff4e2e;
+			color: white;
+			font-size: 17px;
+			width: 75%;
+			height: 60px;
+			cursor: pointer;
+			margin-top: 15px;
+		}
+/* popup window end */
+
+
+/* mobile menu slider start  */
+
+.mobile__slider-menu {
+	display: none;
+	position: absolute;
+	padding-bottom: 30px;
+}
+	.menu-nav__item_slider	{
+		margin-bottom: 0;
+	}
+	.menu-nav-list_slider .menu-nav__link {
+		padding-left: 8%;
+		color: white;
+		border-bottom: 1px solid white;
+		background-color: #f82370;
+	}
+
+	.close-slider {
+		height: 2em;
+		border: 1px solid white;
+		width: 2em;
+		align-self: center;
+		border-radius: 25px;
+		background-color: #f82370;
+		z-index: 5;
+	}
+
+/* transform menu start*/
+	.mobile__slider-menu {
+		-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+		animation-duration: 1s;
+	}
+
+	.animate-up {
+		display: block;
+		animation-name: slider-up;
+	}
+
+		@-webkit-keyframes slider-up {
+			from {top: 0%; opacity: 0;}
+			to {top: -100%; opacity: 0;}
+		}
+
+		/* Standard syntax */
+		@keyframes slider-up {
+			from {top: 0%; opacity: 0;}
+			to {top: -100%; opacity: 0;}
+		}
+
+	.animate-down {
+		animation-name: slider;
+	}
+
+		@-webkit-keyframes slider-down {
+			from {top: -50%; opacity: 1;}
+			to {top: 0%; opacity: 1;}
+		}
+
+		/* Standard syntax */
+		@keyframes slider-down {
+			from {top: -50%; opacity: 1;}
+			to {top: 0%; opacity: 1;}
+		}
+/* transform menu end */
+/* mobile menu slider end  */
 
 }
