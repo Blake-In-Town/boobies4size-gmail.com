@@ -1,3 +1,13 @@
+@-ms-viewport { 
+	width: device-width;
+}
+@-o-viewport { 
+	width: device-width;
+}
+@viewport { 
+	width: device-width;
+}
+
 @media (min-width: 2000px) {
 	.introduction {
 	    background-position: 54em 4em !important;
@@ -191,6 +201,14 @@ button:focus {
 		    height: 60px;
 		    cursor: pointer;
 		    margin-bottom: 45px;
+		}
+
+		.header__mobile-menu {
+			width: 35px;
+			height: 35px;
+			border: none;
+			background-color: transparent;
+    		color: #f82370;
 		}
 
 /*MAIN*/

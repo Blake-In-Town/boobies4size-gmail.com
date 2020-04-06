@@ -1,4 +1,4 @@
-@media (min-width: 551px) and (max-width: 1200px) {
+@media screen and (min-width: 501px) and (max-width: 1200px) {
 
 html, body {
 	width: auto;
@@ -240,6 +240,38 @@ html, body {
 				    background-color: transparent;
 				}
 /*footer end*/
+
+/* tablet header menu start */
+
+.header__tablet-menu {
+	position: absolute;
+	z-index: 1;
+}
+
+.menu-nav-list_slider {
+	flex-wrap: wrap;
+}
+
+.menu-nav-list_slider .menu-nav__link {
+	color: white;
+	border-bottom: 1px solid white;
+	background-color: #f82370;
+	flex-grow: 2;
+	padding: 3% 0;
+	font-size: 22px;
+}
+
+.menu-nav-list_slider .menu-nav__item {
+	flex-direction: row;
+	width: 100%;
+	text-align: center;
+}
+
+.close-slider {
+	display: none;
+}
+
+/* tablet header menu end */
 
 }
 
