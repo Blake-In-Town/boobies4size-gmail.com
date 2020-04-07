@@ -35,23 +35,17 @@ $(function(){
         }
 
         else {
-            $('.mobile__slider-menu').fadeIn();
+            $('.mobile__slider-menu').slideToggle();
             $('.main').animate({
                 marginTop: "18%"
+            });
+            $('.header__mobile').animate({
+                opacity: '0',
+                zIndex: '-1'
             });
             menuStatus = 1;
         } 
     });
-
-    $('.close-slider').click(function(){
-        $('.mobile__slider-menu').fadeOut();
-        $('.header__mobile').fadeIn( 200, function () {
-            $('.main').animate({
-                marginTop: "0%"
-            });    
-        });
-        menuStatus = 0;
-    }); 
 
     $('main').click(function(){
             if(menuStatus != 0) {
@@ -60,6 +54,18 @@ $(function(){
                     opacity: '1',
                     zIndex: '2'
                 });
+                $('.main').animate({
+                    marginTop: "0%"
+                });    
             }
+    });
+
+// плавная прокрутка до якоря
+    $(function(){
+        $("a[href^='#']").click(function(){
+                var _href = $(this).attr("href");
+                $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+                return false;
+        });
     });
 });

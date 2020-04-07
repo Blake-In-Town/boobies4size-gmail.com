@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Бедняков Алексей - Вёрстка на заказ</title>
 		<link rel="stylesheet" type="text/css" href="icofont/icofont.min.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -22,16 +22,14 @@
 	<body class="body body_background">
 		<header class="body__item header">
 <!-- mobile menu slider start -->
-			<nav class="footer__menu-nav menu-nav mobile__slider-menu">
+			<nav class="footer__menu-nav menu-nav mobile__slider-menu header__tablet-menu">
 				<ul class="menu-nav__list_table menu-nav-list menu-nav-list_slider">
 					<li class="menu-nav__item_slider menu-nav__item">
-						<a class="menu-nav__link " href="#">Услуги</a>
+						<a class="menu-nav__link " href="#services">Услуги</a>
 
-						<a class="menu-nav__link " href="#">Портфолио</a>
+						<a class="menu-nav__link " href="#examples">Портфолио</a>
 
-						<a class="menu-nav__link " href="#">Стоимость</a>
-
-						<button class="close-slider"><i class="icofont-caret-up"></i></button>
+						<a class="menu-nav__link " href="#price">Стоимость</a>
 					</li>
 				</ul>
 			</nav>
@@ -58,13 +56,13 @@
 				<nav class="header__menu-nav header__left-side menu-nav">
 					<ul class="menu-nav__list_inline menu-nav-list">
 						<li class="menu-nav__item">
-							<a class="menu-nav__link" href="#">Услуги</a>
+							<a class="menu-nav__link" href="#services">Услуги</a>
 						</li>
 						<li class="menu-nav__item">
-							<a class="menu-nav__link menu-nav__link_underline" href="#">Портфолио</a>
+							<a class="menu-nav__link menu-nav__link_underline" href="#examples">Портфолио</a>
 						</li>
 						<li class="menu-nav__item">
-							<a class="menu-nav__link" href="#">Стоимость</a>
+							<a class="menu-nav__link" href="#price">Стоимость</a>
 						</li>
 					</ul>
 				</nav>
@@ -121,9 +119,10 @@
 					</div>
 				</div>
 			</section>
+
 			<section class="main__skills-list">
 				<div class="skills-list child__element">
-					<h1 class="skills-list__title title">Что я делаю</h1>
+					<h1 class="skills-list__title title" id="services">Что я делаю</h1>
 					<div class="skills-list__item">
 						<img class="skills-list__img" alt="what-i-do-pic1" 
 							src="img/what-i-do-pic-1.png">
@@ -158,7 +157,7 @@
 				</div>
 			</section>
 
-			<section class="main__examples examples ">
+			<section class="main__examples examples" id="examples">
 				<div class="child__element examples__child">
 					<h1 class="examples__title title">Примеры моих работ</h1>
 					<div class="examples__slider slider slider_mobile">
@@ -185,9 +184,9 @@
 				</div>
 			</section>
 
-			<section class="main__agitation agitation ">
+			<section class="main__agitation agitation" id="price">
 				<div class="child__element">
-					<h1 class="agitation__title title">Адаптивная вёрстка под все устройства <br> и браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*</h1>
+					<h1 class="agitation__title title">Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*</h1>
 					<p class="agitation__description"><sup>*</sup></sub> Срок и стоимость могут отличаться от заявленных и расчитываются индивидуально,&nbsp;&nbsp;в зависимости от
 					сложности задач</p>
 				</div>
@@ -198,11 +197,11 @@
 				<nav class="footer__menu-nav menu-nav">
 					<ul class="menu-nav__list_table menu-nav-list">
 						<li class="menu-nav__item">
-							<a class="menu-nav__link description" href="#">Услуги</a>
+							<a class="menu-nav__link description" href="#services">Услуги</a>
 
-							<a class="menu-nav__link description" href="#">Портфолио</a>
+							<a class="menu-nav__link description" href="#examples">Портфолио</a>
 
-							<a class="menu-nav__link description" href="#">Стоимость</a>
+							<a class="menu-nav__link description" href="#price">Стоимость</a>
 
 						</li>
 						<li class="menu-nav__item">
@@ -230,7 +229,7 @@
 			</div>
 		</footer>
 		<div class="copyright body__item">
-		<p class="copyright__content">@ Алексей Бедняков, 2018-2020</p>
+		<p class="copyright__content">&copy; Алексей Бедняков, 2018-2020</p>
 		</div>
 	</body>
 </html>

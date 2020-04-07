@@ -43,7 +43,7 @@ html, body {
 }
 
 .main-button{
-	width: 85%;
+	width: 90%;
 }
 
 .main__skills-list {
@@ -190,11 +190,13 @@ html, body {
 		.agitation__title {
 			width: auto;
 			margin: 0 20px;
+			padding-top: 7%;
 		}
 
 		.agitation__description {
 			width: auto;
-			padding: 30px 20px 45px 20px;
+			font-size: 20px;
+			padding: 19px 20px 45px 20px;
 		    line-height: 2;
 		}
 /*agitation end*/
@@ -300,18 +302,6 @@ html, body {
 		color: white;
 		border-bottom: 1px solid white;
 		background-color: #f82370;
-	}
-
-	.close-slider {
-		position: relative;
-		bottom: 1em;
-		height: 3em;
-		border: 1px solid white;
-		width: 4em;
-		align-self: center;
-		border-radius: 25px;
-		background-color: #f82370;
-		z-index: 5;
 	}
 
 /* mobile menu slider end  */
